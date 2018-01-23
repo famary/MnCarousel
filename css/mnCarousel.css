@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+.container {
+	padding: 0;
+}
+.ft-carousel {
+	position: relative; height: 750px; overflow: hidden; width: 100%;
+}
+.ft-carousel .carousel-inner {
+	position: absolute; left: 0; top: 0; height: 750px; padding-left: 0;
+}
+.ft-carousel .carousel-inner .carousel-item {
+	float: left;
+}
+.ft-carousel .carousel-item img {
+	width: 100%; height: 750px;
+}
+.ft-carousel .carousel-indicators {
+	position: absolute; left: 0; bottom: 20px; width: 100%; text-align: center; font-size: 0;
+}
+.ft-carousel .carousel-indicators span {
+	width: 20px; height: 20px; background:rgba(255,155,106,.3); border-radius: 50%; margin: auto; cursor: pointer; display: inline-block; margin: 0 10px 0 10px;
+}
+.ft-carousel .carousel-indicators span.active {
+	background-color: #ff9b6a;
+}
+.ft-carousel .carousel-prev-btn, .ft-carousel .carousel-next-btn { 
+	width: 90px; 
+	height: 200px;
+	position: absolute;
+	z-index:1; 
+	top: 50%; 
+	margin-top: -100px; 
+	cursor: pointer;
+	background: rgba(0,0,0,0.1) url(../img/left.png) no-repeat center center;
+	display: none;
+}
+.ft-carousel .carousel-prev-btn {
+	left: 5%;
+}
+.ft-carousel .carousel-next-btn {
+	right: 5%; transform: scaleX(-1);
+}
+.ft-carousel:HOVER .carousel-prev-btn, .ft-carousel:HOVER .carousel-next-btn {
+	display: block;
+}
